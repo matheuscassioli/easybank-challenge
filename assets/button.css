@@ -1,0 +1,19 @@
+.all__button {
+    background-image: linear-gradient(to right, #76f521 0%, #5bb0f5  51%, #a0ff7b  100%);
+    margin: 10px;
+    padding: 13px 35px;
+    text-align: center; 
+    font-weight: bold;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--WhiteColor);             
+    border-radius: 50px;
+    display: block;
+    border: none;
+  }
+
+  .all__button:hover {
+    background-position: right center; 
+    color: var(--WhiteColor);
+    text-decoration: none;
+  }

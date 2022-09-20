@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* cores primárias */
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+
+    /* cores neutras */
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --WhiteColor: hsl(0, 0%, 100%);
+    --fontPublic: 'Public Sans', sans-serif;
+    /* 300, 400, 700*/
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+ 
+.icone-hamb {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 20px;
+    width: 40px;
+    z-index: 10;
+    cursor: pointer;
+}
+
