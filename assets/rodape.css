@@ -1,9 +1,10 @@
 .rodape {
     background-color: var(--DarkBlue);
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
     font-family: var(--fontPublic);
+    justify-content: space-around;
+    padding: 2rem 2rem 5rem 2rem;
+    position: relative;
 }
 
 .rodape__esquerda {
@@ -22,42 +23,40 @@
 
 .rodape__lista {
     color: var(--WhiteColor);
-    list-style: none;
     display: flex;
     flex-flow: column wrap;
     height: 120px;
+    list-style: none;
     width: 40%;
 }
 
 .rodape__item {
+    cursor: pointer;
     margin-top: 1rem;
     margin-right: 3rem;
     transition: 500ms;
-    cursor: pointer;
 }
 .rodape__item a:hover{
-    color: #40e0d0;
     box-shadow: 1px 4px 11px -4px;
+    color: var(--WaterColor);
 }
  
 
 .rodape__direita {
+    color: var(--WhiteColor);
     display: flex;
     flex-direction: column;
     justify-content: inherit;
-    color: var(--WhiteColor);
 }
 
 .redes {
-    width: 30px;
     height: 30px; 
     margin-left: 10px;
+    width: 30px;
 }
 
 .rodape__redes-facebook {
-    background: url(./../images/face-branco.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: no-repeat center / cover url(./../images/face-branco.png);; 
     transition: 600ms;
 }
 
@@ -66,9 +65,7 @@
 }
 
 .rodape__redes-youtube {
-    background: url(./../images/youtube-br.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: no-repeat center / cover url(./../images/youtube-br.png); 
     transition: 600ms;
 }
 
@@ -77,9 +74,7 @@
 }
 
 .rodape__redes-twitter {
-    background: url(./../images/twitter-branco.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: no-repeat center / cover url(./../images/twitter-branco.png); 
     transition: 600ms;
 }
 
@@ -88,9 +83,7 @@
 }
 
 .rodape__redes-pinterest {
-    background: url(./../images/pinterest-branco.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: no-repeat center / cover url(./../images/pinterest-branco.png); 
     transition: 600ms;
 }
 
@@ -99,9 +92,7 @@
 }
 
 .rodape__redes-instagram {
-    background: url(./../images/insta-branco.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: no-repeat center / cover url(./../images/insta-branco.png); 
     transition: 600ms;
 }
 
@@ -109,26 +100,53 @@
     background-image: url(./../images/insta-vd.png);
 }
 
+.rodape__assinatura{
+    bottom: 10px;
+    color: var(--WhiteColor);
+    text-align: center;
+    margin: .7rem;
+    position: absolute;
+}
+.rodape__assinatura a{ 
+    color: var(--WhiteColor); 
+    text-decoration: none;
+}
+.rodape__assinatura a:first-child{
+    font-style: italic;
+}
+.rodape__assinatura a:last-child{
+    font-weight: bold;
+}
+.rodape__assinatura img{
+    width:20px;
+    vertical-align: middle;
+}
+
+
+/*-----MEDIA QUERIES------*/
+
+
 @media screen and (max-width:770px) {
     .rodape {
         flex-direction: column;
+        padding: 2rem;
     }
 
     .rodape__logo {
-        width: 200px;
         margin-bottom: 1rem;
+        width: 200px;
     }
 
     .rodape__esquerda {
-        display: flex;
         align-items: center;
+        display: flex;
     }
 
     .rodape__lista {
         height: unset;
         margin: auto;
+        padding: 1.3rem 1.3rem 0.5rem 1.3rem;
         text-align: center;
-        padding: 1.3rem;
     }
 
     .rodape__redes {
@@ -146,5 +164,9 @@
     } 
     .rodape__redes-facebook{
         margin-left: 0;
+    }
+    .rodape__assinatura{
+        margin-top: 2rem;
+        position: unset;
     }
 }

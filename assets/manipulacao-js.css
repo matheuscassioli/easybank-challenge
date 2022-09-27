@@ -2,22 +2,21 @@
     display: none;
 }
 .menu-invisivel {
-    display: none;
-    transition: 1s;
+    display: none; 
 }
 
 .menu-invisivel2 {
+    box-shadow: 25px 37px 163px 21px;
+    border-radius: 10px; 
+    background-color: var(--WhiteColor);
     display: block;
-    background-color: rgb(255, 255, 255);
-    width: 200px;
+    font-family: var(--fontPublic);
     position: absolute;
     right: 0;
     text-align: center;
-    z-index: 1;
-    font-family: var(--fontPublic);
     top: 96px;
-    box-shadow: 25px 37px 163px 21px;
-    border-radius: 10px;
+    width: 200px;
+    z-index: 1;
 }
 
 .menu-invisivel__lista {
@@ -31,7 +30,7 @@
 }
 
 .menu-invisivel__link {
-    color: black;
+    color: var(--DarkBlue);
     text-decoration: none;
 }
 
@@ -40,12 +39,15 @@
 }
 
 .close2 {
-    position: absolute;
+    cursor: pointer;
     display: block;
+    position: absolute;
     right: 32px;
     top: 36px;
-    cursor: pointer;
 }
+
+/*-----MEDIA QUERIES------*/
+
 
 @media screen and (max-width:500px) {
     .menu-invisivel2{

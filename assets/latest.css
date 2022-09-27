@@ -1,7 +1,7 @@
 .latest {
-    width: 80%;
-    margin: 4rem auto;
     font-family: var(--fontPublic);
+    margin: 4rem auto;
+    width: 80%;
 }
 
 .latest__subtitulo {
@@ -11,17 +11,17 @@
 
 .latest__conteudo {
     display: flex; 
-    justify-content: space-around;
-    padding-top: 3rem;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: space-around;
+    padding-top: 3rem;
 }
 
 .latest__itens {
-    width: 23%;
-    min-width: 200px;
     box-shadow: 0px -1px 8px -5px; 
+    min-width: 200px;
     margin-top: 2rem; 
+    width: 23%;
 }
 
 .latest__itens div,
@@ -49,6 +49,10 @@
     font-size: .9rem;
     font-weight: 300; 
 }
+
+
+/*-----MEDIA QUERIES------*/
+
 
 @media screen and (max-width:1080px) {
     .latest__itens{

@@ -15,8 +15,10 @@
     /* cores neutras */
     --GrayishBlue: hsl(233, 8%, 62%);
     --LightGrayishBlue: hsl(220, 16%, 96%);
+    --BannerBg:rgb(241, 241, 241);
     --VeryLightGray: hsl(0, 0%, 98%);
     --WhiteColor: hsl(0, 0%, 100%);
+    --WaterColor: #40e0d0;
     --fontPublic: 'Public Sans', sans-serif;
     /* 300, 400, 700*/
 }
@@ -26,14 +28,13 @@ body {
     position: relative;
 }
 
- 
+
 .icone-hamb {
+    cursor: pointer;
     display: block;
     position: absolute;
-    top: 37px;
     right: 20px;
+    top: 37px;
     width: 40px;
     z-index: 10;
-    cursor: pointer;
 }
-
